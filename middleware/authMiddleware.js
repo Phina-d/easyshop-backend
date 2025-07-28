@@ -1,5 +1,5 @@
 const jwt = require("jsonwebtoken");
-const User = require("../models/user"); // Assure-toi que ce chemin est correct
+const User = require("../models/User"); // Assure-toi que ce chemin est correct
 
 // Middleware pour vérifier le token JWT
 const protect = async (req, res, next) => {
