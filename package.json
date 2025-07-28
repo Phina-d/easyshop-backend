@@ -1,12 +1,12 @@
 {
   "name": "easyshop-backend",
   "version": "1.0.0",
-    "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "seed": "node seeder.js",
-  "dev": "nodemon server.js"
-},
+    "dev": "nodemon server.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
