@@ -1,15 +1,13 @@
-import mongoose from 'mongoose'
+const mongoose = require("mongoose");
 
 const connectDB = async () => {
-  console.log('MONGO_URI in db.js:', process.env.MONGO_URI)
-
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI)
-    console.log(`MongoDB Connected: ${conn.connection.host}`)
+    const conn = await mongoose.connect(process.env.MONGO_URI);
+    console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (error) {
-    console.error(`Error: ${error.message}`)
-    process.exit(1)
+    console.error(`Erreur de connexion à la BDD: ${error.message}`);
+    process.exit(1);
   }
-}
+};
 
-export default connectDB
+module.exports = connectDB;

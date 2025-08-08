@@ -2,7 +2,7 @@
 
 const express = require("express");
 const router = express.Router();
-const Product = require("../models/product");
+const Product = require("./models/Product");
 
 // Route GET pour récupérer tous les produits (admin)
 router.get("/admin/produits", async (req, res) => {
